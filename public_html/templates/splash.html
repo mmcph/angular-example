@@ -1,1 +1,15 @@
 <h2>Splash Component</h2>
+<table class="table table-bordered table-responsive">
+	<tr>
+		<th>User Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+	</tr>
+	<tr *ngFor="let userVal of users">
+		<td>{{ userVal.id }}</td>
+		<td>{{ userVal.name }}</td>
+		<td>{{ userVal.email }}</td>
+		<td>{{ userVal.phone }}</td>
+	</tr>
+</table>
