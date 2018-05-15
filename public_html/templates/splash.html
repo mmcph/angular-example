@@ -9,6 +9,7 @@
 	<tr *ngFor="let userVal of users">
 		<td>{{ userVal.id }}</td>
 		<td>{{ userVal.name }}</td>
+		<!--one-way bind (inject data into url)-->
 		<td><a [href]="'mailto:' + userVal.email">{{ userVal.email }}</a></td>
 		<td>{{ userVal.phone }}</td>
 	</tr>
